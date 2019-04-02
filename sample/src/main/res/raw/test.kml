@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Linea Belgrano Norte (Retiro - Villa Rosa)</name>
+        <Style id="icon-123-normal">
+            <IconStyle>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>http://www.gstatic.com/mapspro/images/stock/123-red-dot.png</href>
+                </Icon>
+                <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <scale>0</scale>
+            </LabelStyle>
+        </Style>
+        <Style id="icon-123-highlight">
+            <IconStyle>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>http://www.gstatic.com/mapspro/images/stock/123-red-dot.png</href>
+                </Icon>
+                <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <scale>1.1</scale>
+            </LabelStyle>
+        </Style>
+        <StyleMap id="icon-123">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#icon-123-normal</styleUrl>
+            </Pair>
+            <Pair>
+                <key>highlight</key>
+                <styleUrl>#icon-123-highlight</styleUrl>
+            </Pair>
+        </StyleMap>
+        <Style id="icon-123-nodesc-normal">
+            <IconStyle>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>http://www.gstatic.com/mapspro/images/stock/123-red-dot.png</href>
+                </Icon>
+                <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <scale>0</scale>
+            </LabelStyle>
+            <BalloonStyle>
+                <text><![CDATA[<h3>$[name]</h3>]]></text>
+            </BalloonStyle>
+        </Style>
+        <Style id="icon-123-nodesc-highlight">
+            <IconStyle>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>http://www.gstatic.com/mapspro/images/stock/123-red-dot.png</href>
+                </Icon>
+                <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <scale>1.1</scale>
+            </LabelStyle>
+            <BalloonStyle>
+                <text><![CDATA[<h3>$[name]</h3>]]></text>
+            </BalloonStyle>
+        </Style>
+        <StyleMap id="icon-123-nodesc">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#icon-123-nodesc-normal</styleUrl>
+            </Pair>
+            <Pair>
+                <key>highlight</key>
+                <styleUrl>#icon-123-nodesc-highlight</styleUrl>
+            </Pair>
+        </StyleMap>
+        <Style id="line-FF0000-5000-normal">
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>5</width>
+            </LineStyle>
+        </Style>
+        <Style id="line-FF0000-5000-highlight">
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>7.5</width>
+            </LineStyle>
+        </Style>
+        <StyleMap id="line-FF0000-5000">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#line-FF0000-5000-normal</styleUrl>
+            </Pair>
+            <Pair>
+                <key>highlight</key>
+                <styleUrl>#line-FF0000-5000-highlight</styleUrl>
+            </Pair>
+        </StyleMap>
+        <Placemark>
+            <name>Retiro</name>
+            <description>Av. José María Ramos Mejía 1430</description>
+            <styleUrl>#icon-123-nodesc</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.374352,-34.589894,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Saldias</name>
+            <description>Padre Carlos Mujica 2100</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.399572,-34.575374,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Ciudad Universitaria</name>
+            <description>Av. Int. Cantilo y Avenida Udaondo</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.447202,-34.543223,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Aristobulo del Valle</name>
+            <description>Avenida Maipú y Acceso a Terminal Puente Saavedra</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.477124,-34.537328,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Padilla</name>
+            <description>General Lavalle y Bernardo de Irigoyen</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.499237,-34.54414,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Florida</name>
+            <description>Av. Gral. San Martín y Sargento Baigorria</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.513193,-34.537065,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Munro</name>
+            <description>Av. Vélez Sársfield y Sargento Baigorria</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.52487,-34.531096,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Carapachay</name>
+            <description>Independencia y Puerto Argentino</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.537678,-34.528709,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Villa Adelina</name>
+            <description>Av. Paraná y 9 de Julio</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.546331,-34.523712,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Boulogne Sur Mer</name>
+            <description>Raúl Scalabrini Ortíz y Godoy Cruz</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.565015,-34.508926,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Vice Alte. Montes</name>
+            <description>Avenida del Trabajo e Italia</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.620122,-34.504006,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Don Torcuato</name>
+            <description>Avenida del Trabajo y Almirante Brown</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.641945,-34.502636,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Adolfo Sourdeaux</name>
+            <description>Rosario y Madera</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.666534,-34.502961,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Villa de Mayo</name>
+            <description>Remedios de Escalada y Villa de Mayo</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.68069,-34.503394,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Los Polvorines</name>
+            <description>Av. Pte. Tte. Gral. J. D. Perón y Gral. San Martín</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.694583,-34.498946,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Pablo Nogues</name>
+            <description>Av. del Sesquicentenario y J. F. Segui</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.706443,-34.493766,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Grand Bourg</name>
+            <description>M. Eva Duarte de Perón y J. F. Segui</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.725095,-34.485358,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Tierras Altas</name>
+            <description>E. D'Amicis y J. F. Segui</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.739787,-34.47876,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Tortuguitas</name>
+            <description>Luis María Drago y J. F. Seguí</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.758,-34.470704,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Manuel Alberti</name>
+            <description>Hipólito Yrigoyen y Los Olivos</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.77506,-34.463152,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Del Viso</name>
+            <description>Independencia y Beruti</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.796818,-34.453397,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Villa Rosa</name>
+            <description>Hipólito Yrigoyen y Rivadavia</description>
+            <styleUrl>#icon-123</styleUrl>
+            <Point>
+                <coordinates>
+                    -58.871483,-34.41637,0
+                </coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>LINEA FERROCARRIL BELGRANO NORTE</name>
+            <description>ESTACION RETIRO - VILLA ROSA</description>
+            <styleUrl>#line-FF0000-5000</styleUrl>
+            <LineString>
+                <tessellate>1</tessellate>
+                <coordinates>
+                    -58.374352,-34.589894,0
+                    -58.3806,-34.586903,0
+                    -58.38401,-34.584923,0
+                    -58.386223,-34.582996,0
+                    -58.388023,-34.581814,0
+                    -58.390579,-34.580559,0
+                    -58.395042,-34.578899,0
+                    -58.396523,-34.577927,0
+                    -58.401608,-34.573669,0
+                    -58.404934,-34.57019,0
+                    -58.407871,-34.567223,0
+                    -58.409805,-34.565842,0
+                    -58.415749,-34.562981,0
+                    -58.418987,-34.560169,0
+                    -58.422935,-34.557323,0
+                    -58.428387,-34.553684,0
+                    -58.431606,-34.551952,0
+                    -58.439266,-34.547657,0
+                    -58.444008,-34.545078,0
+                    -58.450058,-34.541576,0
+                    -58.453556,-34.540287,0
+                    -58.457161,-34.538784,0
+                    -58.461216,-34.535782,0
+                    -58.463726,-34.53426,0
+                    -58.465401,-34.534084,0
+                    -58.467201,-34.534031,0
+                    -58.472912,-34.535568,0
+                    -58.480335,-34.538677,0
+                    -58.491062,-34.543736,0
+                    -58.493061,-34.544353,0
+                    -58.496857,-34.54446,0
+                    -58.501728,-34.542973,0
+                    -58.505634,-34.540852,0
+                    -58.51012,-34.538574,0
+                    -58.520248,-34.533623,0
+                    -58.525246,-34.530918,0
+                    -58.526554,-34.530285,0
+                    -58.527908,-34.529945,0
+                    -58.53323,-34.529366,0
+                    -58.53857,-34.528603,0
+                    -58.540802,-34.527897,0
+                    -58.542801,-34.526535,0
+                    -58.550568,-34.520348,0
+                    -58.554771,-34.517006,0
+                    -58.563591,-34.510021,0
+                    -58.5658,-34.508343,0
+                    -58.567753,-34.507652,0
+                    -58.56945,-34.507389,0
+                    -58.578484,-34.506893,0
+                    -58.586788,-34.50629,0
+                    -58.60421,-34.505161,0
+                    -58.621956,-34.503922,0
+                    -58.635368,-34.503036,0
+                    -58.643799,-34.502525,0
+                    -58.649422,-34.502491,0
+                    -58.66045,-34.502827,0
+                    -58.674805,-34.503162,0
+                    -58.681374,-34.503426,0
+                    -58.683884,-34.503216,0
+                    -58.686478,-34.502701,0
+                    -58.688625,-34.50164,0
+                    -58.691952,-34.500084,0
+                    -58.693817,-34.499271,0
+                    -58.699528,-34.496883,0
+                    -58.716068,-34.489456,0
+                    -58.731564,-34.482452,0
+                    -58.743107,-34.477287,0
+                    -58.752247,-34.473343,0
+                    -58.759865,-34.469856,0
+                    -58.766926,-34.466709,0
+                    -58.774414,-34.463451,0
+                    -58.780205,-34.460869,0
+                    -58.788834,-34.456959,0
+                    -58.793938,-34.454678,0
+                    -58.800785,-34.451653,0
+                    -58.80761,-34.448433,0
+                    -58.81321,-34.44537,0
+                    -58.821041,-34.440964,0
+                    -58.829151,-34.436237,0
+                    -58.834236,-34.43399,0
+                    -58.846424,-34.428452,0
+                    -58.859322,-34.422417,0
+                    -58.866573,-34.418842,0
+                    -58.870846,-34.416679,0
+                    -58.872131,-34.416061,0
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
