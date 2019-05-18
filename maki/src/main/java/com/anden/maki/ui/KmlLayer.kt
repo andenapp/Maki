@@ -11,6 +11,9 @@ import com.google.android.gms.maps.model.*
 
 class KmlLayer private constructor(private val parser: KmlParser,
                                    private val lineColor: Int?,
+                                   var markerAnchorU: Float,
+                                   var markerAnchorV: Float,
+                                   var markersTag: Any?,
                                    private val markerBitmapDescriptor: BitmapDescriptor?) {
 
     private var polyline: Polyline? = null
@@ -36,6 +39,7 @@ class KmlLayer private constructor(private val parser: KmlParser,
 
     private fun addMarkerToMap(googleMap: GoogleMap, placemark: KmlPlacemark, point: KmlPoint): Marker {
         val markerOptions = MarkerOptions()
+        markerOptions.anchor(markerAnchorU, markerAnchorV)
 
         placemark.properties["name"]?.let { markerOptions.title(it) }
         placemark.properties["description"]?.let { markerOptions.snippet(it) }
@@ -44,7 +48,10 @@ class KmlLayer private constructor(private val parser: KmlParser,
 
         markerBitmapDescriptor?.let { markerOptions.icon(it) }
 
-        return googleMap.addMarker(markerOptions)
+        val marker = googleMap.addMarker(markerOptions)
+        marker.tag = markersTag
+
+        return marker
     }
 
 
@@ -62,12 +69,22 @@ class KmlLayer private constructor(private val parser: KmlParser,
         polyline?.remove()
     }
 
-    data class Builder(val context: Context,
-                       val kmlResourceId: Int,
-                       var lineColor: Int? = null,
-                       var markerBitmapDescriptor: BitmapDescriptor? = null) {
+    data class Builder(private val context: Context,
+                       private val kmlResourceId: Int,
+                       private var lineColor: Int? = null,
+                       private var markerAnchorU: Float = 1f,
+                       private var markerAnchorV: Float = 1f,
+                       private var markersTag: Any? = null,
+                       private var markerBitmapDescriptor: BitmapDescriptor? = null) {
 
         fun lineColor(color: Int) = apply { lineColor = color }
+
+        fun markerAnchor(u: Float, v: Float) = apply {
+            markerAnchorU = u
+            markerAnchorV = v
+        }
+
+        fun markersTag(tag: Any) = apply { markersTag = tag }
 
         fun markerBitmapDescriptor(bitmapDescriptor: BitmapDescriptor) = apply { markerBitmapDescriptor = bitmapDescriptor }
 
@@ -77,7 +94,7 @@ class KmlLayer private constructor(private val parser: KmlParser,
             val xmlParser = Xml.newPullParser()
             xmlParser.setInput(inputStream, null)
 
-            return KmlLayer(KmlParser(xmlParser), lineColor, markerBitmapDescriptor)
+            return KmlLayer(KmlParser(xmlParser), lineColor, markerAnchorU, markerAnchorV, markersTag, markerBitmapDescriptor)
         }
 
     }

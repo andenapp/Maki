@@ -46,7 +46,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val layer = KmlLayer.Builder(this, R.raw.test)
             .markerBitmapDescriptor(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher))
+            .markerAnchor(.5f, .5f)
             .lineColor(Color.BLUE)
+            .markersTag("Tag")
             .build()
 
         layer.addToMap(mMap)
